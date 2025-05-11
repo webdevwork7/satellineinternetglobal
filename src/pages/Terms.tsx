@@ -18,7 +18,7 @@ const Terms = () => {
                 Please read these terms carefully before using our services.
               </p>
               <div className="mt-8 text-sm text-white/80">
-                Last Updated: May 15, 2023
+                Last Updated: May 15, 2025
               </div>
             </div>
           </div>
