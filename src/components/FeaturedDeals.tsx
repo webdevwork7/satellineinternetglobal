@@ -1,3 +1,5 @@
+"use client";
+
 import { Check, Star, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
@@ -45,9 +47,9 @@ const deals: Deal[] = [
     provider: "Roam",
     logo: "https://placehold.co/80x40/FF7F50/FFFFFF?text=Roam",
     planName: "Roam Plan",
-    price: "50 - 165",
+    price: "50",
     speed: "Up to 500 Mbps",
-    channels: "Unlimited",
+    channels: "Unlimited: $165/mo",
     features: [
       "Reliable high-speed connectivity at sea",
       "24/7 onboard technical support",
@@ -62,9 +64,9 @@ const deals: Deal[] = [
     provider: "Boat",
     logo: "https://placehold.co/80x40/0BBEAD/FFFFFF?text=Boat",
     planName: "Boat Plan",
-    price: "50 - 165",
+    price: "50",
     speed: "Up to 300 Mbps",
-    channels: "165+ channels",
+    channels: "1024GB: $165/mo",
     features: [
       "Stable and secure connectivity on open waters",
       "Enjoy seamless streaming and browsing while offshore",
@@ -77,6 +79,10 @@ const deals: Deal[] = [
 ];
 
 const FeaturedDeals = () => {
+  const handleCallNow = () => {
+    window.location.href = "tel:+18889701698";
+  };
+
   return (
     <section className="py-16 bg-light">
       <div className="container mx-auto px-4">
@@ -145,7 +151,7 @@ const FeaturedDeals = () => {
                     </div>
                     <div className="mt-2 text-sm text-gray-600">
                       {deal.id === 1
-                        ? "for 12 months + taxes"
+                        ? "for per month + taxes"
                         : deal.id === 2
                         ? "ROAM-50GB: $50/mo | Unlimited: $165/mo"
                         : "Mobile 50GB: $50/mo | 1024GB: $165/mo"}
@@ -179,7 +185,10 @@ const FeaturedDeals = () => {
                 </CardContent>
 
                 <CardFooter>
-                  <Button className="w-full bg-navy hover:bg-navy/90 flex items-center gap-2">
+                  <Button
+                    onClick={handleCallNow}
+                    className="w-full bg-navy hover:bg-navy/90 flex items-center gap-2"
+                  >
                     <Phone className="h-4 w-4" />
                     Call Now
                   </Button>
@@ -190,7 +199,10 @@ const FeaturedDeals = () => {
         </div>
 
         <div className="mt-10 flex justify-center">
-          <Button className="bg-teal hover:bg-teal/90 flex items-center gap-2">
+          <Button
+            onClick={handleCallNow}
+            className="bg-teal hover:bg-teal/90 flex items-center gap-2"
+          >
             <Phone className="h-4 w-4" />
             Call Now & Talk to an Expert
           </Button>

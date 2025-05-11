@@ -1,19 +1,19 @@
-"use client"
-import { Check, X } from "lucide-react"
+"use client";
+import { Check, X } from "lucide-react";
 
 interface ProviderPlan {
-  provider: string
-  logo: string
+  provider: string;
+  logo: string;
   internet: {
-    speed: string
-    price: string
-    priceRange?: boolean
-    dataCaps: boolean
-    contract: string
-    equipment: string
-    installation: string
-    description?: string
-  }
+    speed: string;
+    price: string;
+    priceRange?: boolean;
+    dataCaps: boolean;
+    contract: string;
+    equipment: string;
+    installation: string;
+    description?: string;
+  };
 }
 
 const providers: ProviderPlan[] = [
@@ -59,46 +59,48 @@ const providers: ProviderPlan[] = [
       description: "Stable and secure connectivity on open waters",
     },
   },
-]
+];
 
 const ComparisonSection = () => {
   return (
     <section className="py-16 bg-gray-50">
       <div className="container mx-auto px-4">
         <div className="text-center mb-10">
-          <h2 className="text-3xl font-bold text-navy mb-4">Compare Satellite Internet Plans</h2>
+          <h2 className="text-3xl font-bold text-navy mb-4">
+            Compare Satellite Internet Plans
+          </h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
-            See how different satellite internet providers stack up against each other to find the best fit for your
-            needs.
+            See how different satellite internet providers stack up against each
+            other to find the best fit for your needs.
           </p>
         </div>
 
         <div className="overflow-x-auto bg-white rounded-lg shadow">
-          <table className="min-w-full">
+          <table className="min-w-full divide-y divide-gray-200 table-fixed">
             <thead>
               <tr className="bg-gray-50 border-b">
-                <th className="py-4 px-6 text-left text-sm font-medium text-gray-500 uppercase tracking-wider">
+                <th className="py-4 px-4 text-left text-sm font-medium text-gray-500 uppercase tracking-wider w-[14%]">
                   Provider
                 </th>
-                <th className="py-4 px-6 text-left text-sm font-medium text-gray-500 uppercase tracking-wider">
+                <th className="py-4 px-4 text-left text-sm font-medium text-gray-500 uppercase tracking-wider w-[14%]">
                   Speed
                 </th>
-                <th className="py-4 px-6 text-left text-sm font-medium text-gray-500 uppercase tracking-wider">
+                <th className="py-4 px-4 text-left text-sm font-medium text-gray-500 uppercase tracking-wider w-[12%]">
                   Price
                 </th>
-                <th className="py-4 px-6 text-left text-sm font-medium text-gray-500 uppercase tracking-wider">
+                <th className="py-4 px-4 text-left text-sm font-medium text-gray-500 uppercase tracking-wider w-[10%]">
                   Data Caps
                 </th>
-                <th className="py-4 px-6 text-left text-sm font-medium text-gray-500 uppercase tracking-wider">
+                <th className="py-4 px-4 text-left text-sm font-medium text-gray-500 uppercase tracking-wider w-[12%]">
                   Contract
                 </th>
-                <th className="py-4 px-6 text-left text-sm font-medium text-gray-500 uppercase tracking-wider">
+                <th className="py-4 px-4 text-left text-sm font-medium text-gray-500 uppercase tracking-wider w-[12%]">
                   Equipment
                 </th>
-                <th className="py-4 px-6 text-left text-sm font-medium text-gray-500 uppercase tracking-wider">
+                <th className="py-4 px-4 text-left text-sm font-medium text-gray-500 uppercase tracking-wider w-[14%]">
                   Installation
                 </th>
-                <th className="py-4 px-6 text-left text-sm font-medium text-gray-500 uppercase tracking-wider">
+                <th className="py-4 px-4 text-left text-sm font-medium text-gray-500 uppercase tracking-wider w-[12%]">
                   Description
                 </th>
               </tr>
@@ -106,31 +108,44 @@ const ComparisonSection = () => {
             <tbody className="divide-y divide-gray-200">
               {providers.map((provider, index) => (
                 <tr key={index} className="hover:bg-gray-50">
-                  <td className="py-4 px-6 whitespace-nowrap">
-                    <div className="flex items-center">
+                  <td className="py-4 px-4">
+                    <div className="flex flex-col sm:flex-row sm:items-center gap-2">
                       <img
                         src={provider.logo || "/placeholder.svg"}
                         alt={provider.provider}
-                        className="h-8 w-auto mr-3"
+                        className="h-8 w-auto"
                       />
                       <span className="font-medium">{provider.provider}</span>
                     </div>
                   </td>
-                  <td className="py-4 px-6 whitespace-nowrap text-navy font-medium">{provider.internet.speed}</td>
-                  <td className="py-4 px-6 whitespace-nowrap">
-                    {provider.internet.priceRange ? `$${provider.internet.price}/mo` : `$${provider.internet.price}/mo`}
+                  <td className="py-4 px-4 text-navy font-medium break-words">
+                    <div className="break-words">{provider.internet.speed}</div>
                   </td>
-                  <td className="py-4 px-6 whitespace-nowrap">
+                  <td className="py-4 px-4">
+                    {provider.internet.priceRange
+                      ? `$${provider.internet.price}/mo`
+                      : `$${provider.internet.price}/mo`}
+                  </td>
+                  <td className="py-4 px-4 text-center">
                     {provider.internet.dataCaps ? (
-                      <X className="text-red-500 h-5 w-5" />
+                      <X className="text-red-500 h-5 w-5 inline-block" />
                     ) : (
-                      <Check className="text-green-500 h-5 w-5" />
+                      <Check className="text-green-500 h-5 w-5 inline-block" />
                     )}
                   </td>
-                  <td className="py-4 px-6 whitespace-nowrap">{provider.internet.contract}</td>
-                  <td className="py-4 px-6 whitespace-nowrap">{provider.internet.equipment}</td>
-                  <td className="py-4 px-6 whitespace-nowrap">{provider.internet.installation}</td>
-                  <td className="py-4 px-6 whitespace-nowrap max-w-xs truncate">{provider.internet.description}</td>
+                  <td className="py-4 px-4">{provider.internet.contract}</td>
+                  <td className="py-4 px-4">{provider.internet.equipment}</td>
+                  <td className="py-4 px-4">
+                    {provider.internet.installation}
+                  </td>
+                  <td className="py-4 px-4">
+                    <div
+                      className="line-clamp-2"
+                      title={provider.internet.description}
+                    >
+                      {provider.internet.description}
+                    </div>
+                  </td>
                 </tr>
               ))}
             </tbody>
@@ -138,11 +153,14 @@ const ComparisonSection = () => {
         </div>
 
         <div className="mt-8 text-center text-sm text-gray-500">
-          <p>* Prices may vary by location and are subject to change. Additional fees and taxes may apply.</p>
+          <p>
+            * Prices may vary by location and are subject to change. Additional
+            fees and taxes may apply.
+          </p>
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default ComparisonSection
+export default ComparisonSection;
