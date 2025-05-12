@@ -34,9 +34,9 @@ const ShippingPolicy = () => {
                   Delivery Timeframes
                 </h2>
                 <p>
-                  At Linkify, we strive to deliver your satellite internet
-                  equipment as quickly as possible. Standard delivery timeframes
-                  are as follows:
+                  At satelliteinternetglobal, we strive to deliver your
+                  satellite internet equipment as quickly as possible. Standard
+                  delivery timeframes are as follows:
                 </p>
                 <ul>
                   <li>Urban areas: 3-5 business days</li>
@@ -130,10 +130,10 @@ const ShippingPolicy = () => {
                 <p>
                   <strong>Email:</strong>{" "}
                   <a
-                    href="mailto:support@linkify.com"
+                    href="mailto:support@satelliteinternetglobal.com"
                     className="text-teal hover:underline"
                   >
-                    support@linkify.com
+                    support@satelliteinternetglobal.com
                   </a>
                 </p>
                 <p>

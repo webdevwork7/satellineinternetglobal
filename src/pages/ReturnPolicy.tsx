@@ -109,10 +109,10 @@ const ReturnPolicy = () => {
                 <p>
                   <strong>Email:</strong>{" "}
                   <a
-                    href="mailto:support@linkify.com"
+                    href="mailto:support@satelliteinternetglobal.com"
                     className="text-teal hover:underline"
                   >
-                    support@linkify.com
+                    support@satelliteinternetglobal.com
                   </a>
                 </p>
                 <p>

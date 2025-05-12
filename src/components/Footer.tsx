@@ -7,7 +7,9 @@ const Footer = () => {
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
           <div>
-            <h3 className="text-xl font-bold mb-4">Linkify</h3>
+            <h3 className="text-xl font-bold mb-4">
+              Satellite Internet Global
+            </h3>
             <p className="text-gray-300 mb-4">
               Your trusted advisor for finding the best internet deals tailored
               to your needs.
@@ -162,10 +164,10 @@ const Footer = () => {
               <li className="flex items-start">
                 <Mail className="h-5 w-5 mr-3 text-teal" />
                 <a
-                  href="mailto:support@linkify.com"
+                  href="mailto:support@satelliteinternetglobal.com"
                   className="hover:text-teal transition-colors"
                 >
-                  support@linkify.com
+                  support@satelliteinternetglobal.com
                 </a>
               </li>
               <li className="flex items-start">
@@ -183,7 +185,8 @@ const Footer = () => {
         <div className="border-t border-gray-700 pt-6 mt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-400 text-sm mb-4 md:mb-0">
-              © {new Date().getFullYear()} Linkify. All rights reserved.
+              © {new Date().getFullYear()} Satellite Internet Global. All rights
+              reserved.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <Link

@@ -93,18 +93,18 @@ const Disclaimer = () => {
                 </h2>
                 <p>
                   This website may contain links to third-party websites or
-                  services that are not owned or controlled by Linkify. We have
-                  no control over, and assume no responsibility for, the
-                  content, privacy policies, or practices of any third-party
-                  websites or services.
+                  services that are not owned or controlled by
+                  satelliteinternetglobal. We have no control over, and assume
+                  no responsibility for, the content, privacy policies, or
+                  practices of any third-party websites or services.
                 </p>
                 <p>
-                  You acknowledge and agree that Linkify shall not be
-                  responsible or liable, directly or indirectly, for any damage
-                  or loss caused or alleged to be caused by or in connection
-                  with the use of or reliance on any such content, goods, or
-                  services available on or through any such websites or
-                  services.
+                  You acknowledge and agree that satelliteinternetglobal shall
+                  not be responsible or liable, directly or indirectly, for any
+                  damage or loss caused or alleged to be caused by or in
+                  connection with the use of or reliance on any such content,
+                  goods, or services available on or through any such websites
+                  or services.
                 </p>
 
                 <h2 className="text-2xl font-bold text-navy mb-4 mt-8">
@@ -145,10 +145,10 @@ const Disclaimer = () => {
                 <p>
                   <strong>Email:</strong>{" "}
                   <a
-                    href="mailto:support@linkify.com"
+                    href="mailto:support@satelliteinternetglobal.com"
                     className="text-teal hover:underline"
                   >
-                    support@linkify.com
+                    support@satelliteinternetglobal.com
                   </a>
                 </p>
                 <p>

@@ -33,11 +33,11 @@ const Terms = () => {
                   1. Introduction
                 </h2>
                 <p>
-                  Welcome to Linkify. These Terms and Conditions govern your use
-                  of our website, products, and services. By accessing or using
-                  Linkify's services, you agree to be bound by these Terms. If
-                  you disagree with any part of the terms, you may not access
-                  our services.
+                  Welcome to satelliteinternetglobal. These Terms and Conditions
+                  govern your use of our website, products, and services. By
+                  accessing or using satelliteinternetglobal's services, you
+                  agree to be bound by these Terms. If you disagree with any
+                  part of the terms, you may not access our services.
                 </p>
 
                 <h2 className="text-2xl font-bold text-navy mb-4 mt-8">
@@ -48,7 +48,7 @@ const Terms = () => {
                   <li>
                     <strong>"Company"</strong> (referred to as either "the
                     Company", "We", "Us" or "Our" in this Agreement) refers to
-                    Linkify.
+                    satelliteinternetglobal.
                   </li>
                   <li>
                     <strong>"Service"</strong> refers to the Company's website,
@@ -61,8 +61,9 @@ const Terms = () => {
                     Service.
                   </li>
                   <li>
-                    <strong>"Website"</strong> refers to Linkify, accessible
-                    from www.linkify.com.
+                    <strong>"Website"</strong> refers to
+                    satelliteinternetglobal, accessible from
+                    www.satelliteinternetglobal.com.
                   </li>
                 </ul>
 
@@ -70,11 +71,11 @@ const Terms = () => {
                   3. Service Description
                 </h2>
                 <p>
-                  Linkify provides satellite internet services, including but
-                  not limited to residential, roaming, and maritime connectivity
-                  solutions. Our services are subject to availability in your
-                  area and may vary based on geographical and technical
-                  limitations.
+                  Satellite Internet Global provides satellite internet
+                  services, including but not limited to residential, roaming,
+                  and maritime connectivity solutions. Our services are subject
+                  to availability in your area and may vary based on
+                  geographical and technical limitations.
                 </p>
                 <p>
                   We strive to provide continuous, high-quality service but
@@ -116,7 +117,7 @@ const Terms = () => {
                 <p>
                   We reserve the right to change our fees upon reasonable
                   notice. Such notice may be provided at any time by posting the
-                  changes to the Linkify Website or via email.
+                  changes to the satelliteinternetglobal Website or via email.
                 </p>
 
                 <h2 className="text-2xl font-bold text-navy mb-4 mt-8">
@@ -125,9 +126,9 @@ const Terms = () => {
                 <p>
                   Depending on your service plan, equipment may be provided to
                   you on a lease or purchase basis. Equipment provided on a
-                  lease basis remains the property of Linkify and must be
-                  returned upon termination of service in good working
-                  condition, normal wear and tear excepted.
+                  lease basis remains the property of satelliteinternetglobal
+                  and must be returned upon termination of service in good
+                  working condition, normal wear and tear excepted.
                 </p>
                 <p>
                   You are responsible for maintaining all equipment necessary
@@ -185,11 +186,12 @@ const Terms = () => {
                   9. Limitation of Liability
                 </h2>
                 <p>
-                  In no event shall Linkify, nor its directors, employees,
-                  partners, agents, suppliers, or affiliates, be liable for any
-                  indirect, incidental, special, consequential or punitive
-                  damages, including without limitation, loss of profits, data,
-                  use, goodwill, or other intangible losses, resulting from:
+                  In no event shall satelliteinternetglobal, nor its directors,
+                  employees, partners, agents, suppliers, or affiliates, be
+                  liable for any indirect, incidental, special, consequential or
+                  punitive damages, including without limitation, loss of
+                  profits, data, use, goodwill, or other intangible losses,
+                  resulting from:
                 </p>
                 <ul>
                   <li>
@@ -233,10 +235,10 @@ const Terms = () => {
                 <p>
                   <strong>Email:</strong>{" "}
                   <a
-                    href="mailto:legal@linkify.com"
+                    href="mailto:legal@satelliteinternetglobal.com"
                     className="text-teal hover:underline"
                   >
-                    legal@linkify.com
+                    legal@satelliteinternetglobal.com
                   </a>
                 </p>
                 <p>
@@ -249,8 +251,8 @@ const Terms = () => {
                   </a>
                 </p>
                 <p>
-                  <strong>Mail:</strong> Linkify Legal Department, 1234 Digital
-                  Ave, Suite 100, Tech City, TX 75001
+                  <strong>Mail:</strong> Satellite Internet Global Legal
+                  Department, 1234 Digital Ave, Suite 100, Tech City, TX 75001
                 </p>
               </div>
             </div>

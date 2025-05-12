@@ -26,7 +26,7 @@ const NavBar = () => {
           <div className="flex items-center">
             <Link to="/" className="flex items-center">
               <span className="text-2xl font-bold text-navy">
-                Link<span className="text-teal">ify</span>
+                Satellite Internet<span className="text-teal"> Global</span>
               </span>
             </Link>
           </div>

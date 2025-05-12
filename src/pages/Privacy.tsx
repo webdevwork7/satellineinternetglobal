@@ -34,11 +34,12 @@ const Privacy = () => {
                   Introduction
                 </h2>
                 <p>
-                  At Linkify ("we," "our," or "us"), we respect your privacy and
-                  are committed to protecting your personal information. This
-                  Privacy Policy explains how we collect, use, disclose, and
-                  safeguard your information when you visit our website, use our
-                  satellite internet services, or interact with us in any way.
+                  At Satellite Internet Global ("we," "our," or "us"), we
+                  respect your privacy and are committed to protecting your
+                  personal information. This Privacy Policy explains how we
+                  collect, use, disclose, and safeguard your information when
+                  you visit our website, use our satellite internet services, or
+                  interact with us in any way.
                 </p>
                 <p>
                   Please read this Privacy Policy carefully. By accessing or
@@ -141,7 +142,8 @@ const Privacy = () => {
                   <li>To enforce our terms of service</li>
                   <li>
                     If we believe disclosure is necessary to protect the rights,
-                    property, or safety of Linkify, our customers, or others
+                    property, or safety of satelliteinternetglobal, our
+                    customers, or others
                   </li>
                 </ul>
 
@@ -213,10 +215,10 @@ const Privacy = () => {
                 <p>
                   <strong>Email:</strong>{" "}
                   <a
-                    href="mailto:privacy@linkify.com"
+                    href="mailto:privacy@satelliteinternetglobal.com"
                     className="text-teal hover:underline"
                   >
-                    privacy@linkify.com
+                    privacy@satelliteinternetglobal.com
                   </a>
                 </p>
                 <p>
@@ -229,8 +231,8 @@ const Privacy = () => {
                   </a>
                 </p>
                 <p>
-                  <strong>Mail:</strong> Linkify Privacy Office, 1234 Digital
-                  Ave, Suite 100, Tech City, TX 75001
+                  <strong>Mail:</strong> Satellite Internet Global Privacy
+                  Office, 1234 Digital Ave, Suite 100, Tech City, TX 75001
                 </p>
               </div>
             </div>
