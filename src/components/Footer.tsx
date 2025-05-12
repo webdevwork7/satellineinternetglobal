@@ -185,7 +185,7 @@ const Footer = () => {
             <p className="text-gray-400 text-sm mb-4 md:mb-0">
               © {new Date().getFullYear()} Linkify. All rights reserved.
             </p>
-            <div className="flex space-x-6">
+            <div className="flex flex-wrap justify-center gap-4">
               <Link
                 to="/privacy"
                 className="text-gray-400 hover:text-white text-sm"
@@ -198,9 +198,24 @@ const Footer = () => {
               >
                 Terms & Conditions
               </Link>
-              <a href="#" className="text-gray-400 hover:text-white text-sm">
-                Accessibility
-              </a>
+              <Link
+                to="/shipping-policy"
+                className="text-gray-400 hover:text-white text-sm"
+              >
+                Shipping Policy
+              </Link>
+              <Link
+                to="/return-policy"
+                className="text-gray-400 hover:text-white text-sm"
+              >
+                Return Policy
+              </Link>
+              <Link
+                to="/disclaimer"
+                className="text-gray-400 hover:text-white text-sm"
+              >
+                Disclaimer
+              </Link>
               <a href="#" className="text-gray-400 hover:text-white text-sm">
                 Sitemap
               </a>
