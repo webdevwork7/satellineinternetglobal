@@ -62,16 +62,34 @@ const NavBar = () => {
               </Link>
             </div>
 
-            <Button
-  onClick={handleCallNow}
-  className="bg-orange hover:bg-orange/90 text-white flex items-center gap-2 px-4 py-2 rounded-md shadow-sm"
+            <motion.div
+  whileHover={{ scale: 1.05 }}
+  whileTap={{ scale: 0.95 }}
+  className="relative inline-flex"
 >
-  <Phone className="h-4 w-4" />
-  <div className="flex flex-col items-start leading-tight">
-    <span className="text-sm font-semibold">Call Now</span>
-    <span className="text-xs">+1 (888) 970-1698</span>
-  </div>
-</Button>
+  <button
+    onClick={handleCallNow}
+    className="relative z-10 inline-flex items-center gap-2 px-6 py-3 sm:px-7 sm:py-3.5 text-sm sm:text-base font-semibold rounded-full text-white bg-orange hover:bg-orange/90 shadow-lg transition-all duration-300"
+  >
+    <PhoneCall className="h-5 w-5 animate-pulse" />
+    <span>
+      Call Now: <span className="font-bold tracking-wide ml-1">+1 (888) 970-1698</span>
+    </span>
+  </button>
+
+  {/* Glowing Orange Background */}
+  <motion.div
+    initial={{ opacity: 0.4, scale: 1 }}
+    animate={{ opacity: [0.4, 0.1, 0.4], scale: [1, 1.07, 1] }}
+    transition={{
+      duration: 2.4,
+      repeat: Infinity,
+      ease: "easeInOut",
+    }}
+    className="absolute inset-0 z-0 rounded-full bg-orange blur-xl"
+  />
+</motion.div>
+
 
           </div>
 
