@@ -63,12 +63,16 @@ const NavBar = () => {
             </div>
 
             <Button
-              onClick={handleCallNow}
-              className="bg-orange hover:bg-orange/90 text-white flex items-center gap-2"
-            >
-              <Phone className="h-4 w-4" />
-              Call Now
-            </Button>
+  onClick={handleCallNow}
+  className="bg-orange hover:bg-orange/90 text-white flex items-center gap-2 px-4 py-2 rounded-md shadow-sm"
+>
+  <Phone className="h-4 w-4" />
+  <div className="flex flex-col items-start leading-tight">
+    <span className="text-sm font-semibold">Call Now</span>
+    <span className="text-xs">+1 (888) 970-1698</span>
+  </div>
+</Button>
+
           </div>
 
           {/* Mobile menu button */}
