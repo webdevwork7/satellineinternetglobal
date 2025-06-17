@@ -1,4 +1,7 @@
-"use client";
+"use client"
+
+import { motion } from "framer-motion"
+import { PhoneCall } from "lucide-react"
 
 import { useState } from "react";
 import { Menu, X, Phone } from "lucide-react";
