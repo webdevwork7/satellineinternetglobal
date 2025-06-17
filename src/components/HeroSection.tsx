@@ -205,15 +205,31 @@ const HeroSection = () => {
                 animate={{ scale: 1 }}
                 transition={{ type: "spring", stiffness: 200, delay: 1.2 }}
               >
-                <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} className="w-full sm:w-auto">
-                  <Button
-                    onClick={handleCallNow}
-                    className="bg-orange hover:bg-orange/90 text-white font-bold py-7 px-8 rounded-xl transition-all shadow-lg hover:shadow-xl text-lg w-full sm:w-auto flex items-center justify-center gap-2"
-                  >
-                    <PhoneCall className="h-5 w-5" />
-                    Call Now & Talk to an Expert
-                  </Button>
-                </motion.div>
+                <motion.div
+  whileHover={{ scale: 1.05 }}
+  whileTap={{ scale: 0.95 }}
+  className="relative inline-flex"
+>
+  <button
+    onClick={handleCallNow}
+    className="relative z-10 inline-flex items-center justify-center gap-2 px-6 py-4 sm:px-8 sm:py-5 text-lg font-semibold rounded-full text-white bg-gradient-to-r from-orange-500 via-pink-500 to-red-500 shadow-lg hover:shadow-2xl transition-all duration-300"
+  >
+    <PhoneCall className="h-5 w-5" />
+    Call Now: +1 (888) 970-1698
+  </button>
+
+  {/* Glowing animated background */}
+  <motion.div
+    initial={{ opacity: 0.6, scale: 1 }}
+    animate={{ opacity: [0.6, 0.2, 0.6], scale: [1, 1.1, 1] }}
+    transition={{
+      duration: 2.5,
+      repeat: Infinity,
+      ease: "easeInOut",
+    }}
+    className="absolute inset-0 z-0 rounded-full bg-gradient-to-r from-orange-500 via-pink-500 to-red-500 blur-xl"
+  />
+</motion.div>
 
                 <motion.div
                   initial={{ opacity: 0, y: 10 }}
